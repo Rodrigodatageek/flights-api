@@ -7,20 +7,9 @@ import SearchResults from './components/SearchResults';
 
 function App() {
 
-  const url = 'https://api.skypicker.com/flights?fly_from=PRG&fly_to=VLC&partner=data4youcbp202106&limit=5';
+ 
 
-  const [flight, setFlight] = useState([]);
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const resp = await fetch(url);
-    const result = await resp.json();
-    console.log(result.data);
-    setData(result.data);
-  }
+  
   return (
     <div className="App">
      <Router>

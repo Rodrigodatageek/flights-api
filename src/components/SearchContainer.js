@@ -3,7 +3,7 @@ import To from "./To";
 import { useEffect, useState } from 'react';
 
 
-function SearchContainer() {
+function SearchContainer({setData}) {
 
     const [from, setFrom] = useState("");
     const [to, setTo] = useState("");
@@ -23,6 +23,9 @@ function SearchContainer() {
       const resp = await fetch(url);
       const result = await resp.json();
       console.log(result);
+
+      result && !!result.data.length && setFlight(result.data);
+      result && !!result.data.length && setData(result.data);
     }
 
     return (

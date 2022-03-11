@@ -5,7 +5,7 @@ function To({setTo}) {
 
   const toDestination = [
     {name: "Valencia", code: "VLC"}, 
-    {name: "Barcelona", code: "BSN"},
+    {name: "Barcelona", code: "BCN"},
     {name: "Madrid", code: "MAD"}, 
     {name: "Milano", code: "MXP"}, 
     {name: "Athens", code: "ATH"}

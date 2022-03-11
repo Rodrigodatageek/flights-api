@@ -12,7 +12,7 @@ function SearchResults({ data }) {
 
   return (
     <div>
-      <h1>Serch Results: </h1>
+      <h1>Search Results: </h1>
       {data.map((element, i) => (
         <div key={i}>
           <p><strong>Price:</strong> {element.price} EUR</p>

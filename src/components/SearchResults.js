@@ -15,6 +15,7 @@ function SearchResults({ data }) {
       
       {!!data.length ? data.map((element, i) => (
         <div key={i}>
+
           <h2><strong>From </strong> {element.cityFrom} <strong> to </strong> {element.cityTo}</h2>
           <p><strong>Price:</strong> {element.price} EUR</p>
           <p><strong>Price of normal ticket and bag:</strong> {element.price + element.bags_price[1]} EUR</p>
@@ -24,6 +25,9 @@ function SearchResults({ data }) {
           <p><strong>Code of the destination:</strong> {element.flyTo}</p>
           <p><strong>Departure Time:</strong> {DateTime.fromMillis(element.dTime * 1000).toFormat('hh:mm')}</p> 
           <p><strong>Arrival Time:</strong> {DateTime.fromMillis(element.aTime * 1000).toFormat('hh:mm')}</p>
+
+          
+
           <p><strong>Total duration of your flight is:</strong> {DateTime.fromMillis(element.duration.total * 1000).toFormat('hh:mm')}</p>
           <hr/>
         {/* <p><strong>Region:</strong> {data.region}</p>

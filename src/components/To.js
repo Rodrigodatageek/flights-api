@@ -14,7 +14,7 @@ function To({setTo}) {
 
   return (
     <div className="select">
-      <label>Arrival to</label>
+      <label>Arrival to </label>
         <select 
         defaultValue={""}  
         onChange={(e) => setTo(e.target.value)}>

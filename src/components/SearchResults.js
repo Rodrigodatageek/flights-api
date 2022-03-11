@@ -12,10 +12,9 @@ function SearchResults({ data }) {
 
   return (
     <div>
-      <h1>Search Results: </h1>
       {data.map((element, i) => (
         <div key={i}>
-          <h1><strong>From </strong> {element.cityFrom} <strong> to </strong> {element.cityTo}</h1>
+          <h2><strong>From </strong> {element.cityFrom} <strong> to </strong> {element.cityTo}</h2>
           <p><strong>Price:</strong> {element.price} EUR</p>
           <p><strong>Price of normal ticket and bag:</strong> {element.price + element.bags_price[1]} EUR</p>
           <p><strong>Airport's code (from):</strong> {element.flyFrom}</p>

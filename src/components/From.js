@@ -12,7 +12,7 @@ function From({setFrom}) {
 
     return (
         <div className="select">
-            <label>Departure from</label>
+            <label>Departure from </label>
             <select
             defaultValue={""} 
             onChange={(e) => setFrom(e.target.value)}>

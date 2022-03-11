@@ -5,6 +5,7 @@ import App from "../App";
 import { DateTime } from 'luxon';
 
 function SearchResults({ data }) {
+    console.log(data)
 
     // DateTime.fromMillis(element.dTime * 1000).toFormat('hh:mm');
     // console.log(DateTime.fromMillis(element.dTime * 1000).toFormat('hh:mm'));

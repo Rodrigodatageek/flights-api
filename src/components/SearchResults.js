@@ -13,7 +13,7 @@ function SearchResults({ data }) {
   return (
     <div>
       <h1>Search Results: </h1>
-      {data.map((element, i) => (
+      {!!data.length ? data.map((element, i) => (
         <div key={i}>
           <p><strong>Price:</strong> {element.price} EUR</p>
           <p><strong>Price of normal ticket and bag:</strong> {element.price + element.bags_price[1]} EUR</p>
@@ -29,7 +29,8 @@ function SearchResults({ data }) {
         {data.capital && <p><strong>Capital:</strong> {data.capital[0]}</p>} */}
         </div>
       )
-      )}
+      ) : 
+      <p>There are no direct flights</p>} 
     </div>
   )
 }

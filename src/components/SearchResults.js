@@ -12,11 +12,7 @@ function SearchResults({ data }) {
 
   return (
     <div>
-<<<<<<< HEAD
       <h1>Search Results: </h1>
-=======
-      <h1>Serch results: </h1>
->>>>>>> c636c65f9acb66bbb25a00e14ede58d7cb1b360c
       {data.map((element, i) => (
         <div key={i}>
           <h1><strong>From </strong> {element.cityFrom} <strong> to </strong> {element.cityTo}</h1>

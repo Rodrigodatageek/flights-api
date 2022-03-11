@@ -16,6 +16,7 @@ console.log(data);
   
   return (
     <div className="App">
+      <h2>Select departure and arrival destination</h2>
       <SearchContainer setInitial={setInitial} setData={setData}/>
       { !initial && <SearchResults data={data}/>}
      

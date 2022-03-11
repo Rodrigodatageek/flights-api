@@ -15,7 +15,7 @@ function SearchResults({ data }) {
       <h1>Serch Results: </h1>
       {data.map((element, i) => (
         <div key={i}>
-          <p><strong>Price:</strong> {element.price} EUR</p>
+          <p><strong>Price:</strong> {element.price} EURO</p>
           <p><strong>Price of normal ticket and bag:</strong> {element.price + element.bags_price[1]} EUR</p>
           <p><strong>Name of origin destination:</strong> {element.cityFrom}</p>
           <p><strong>Code of the origin destination:</strong> {element.flyFrom}</p>

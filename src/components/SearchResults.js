@@ -3,10 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import App from "../App";
 import { DateTime } from 'luxon';
-<<<<<<< HEAD
 import seacrhContainer from './SearchContainer'
-=======
->>>>>>> ffd42494fe4429f4686534981f059d05d3a03a38
 
 function SearchResults({ data }) {
     console.log(data)

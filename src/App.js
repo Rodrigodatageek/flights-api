@@ -9,14 +9,16 @@ import SearchContainer from './components/SearchContainer';
 function App() {
 
 const [data, setData] = useState([]);
+const [initial, setInitial] = useState(true)
 
 console.log(data);
 
   
   return (
     <div className="App">
-      <SearchContainer setData={setData}/>
-      <SearchResults data={data}/>
+      <h2>Select departure and arrival destination</h2>
+      <SearchContainer setInitial={setInitial} setData={setData}/>
+      { !initial && <SearchResults data={data}/>}
      
 
       
